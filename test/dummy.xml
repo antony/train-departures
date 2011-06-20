@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table cellpadding="0" cellspacing="0" border="1">
+    <thead>
+        <tr>
+            <th width="10%">Due</th>
+            <th width="45%" class="destination">Destination</th>
+            <th width="20%">Status</th>
+            <th width="10%">Platform</th>
+            <th width="15%">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="firstRow">
+            <td>12:53</td>
+            <td class="destination">
+
+                Weybridge
+
+            </td>
+            <td class="status">On time</td>
+            <td>2</td>
+            <td>
+                <a href="/service/ldbdetails/FlqZ4pozQVePMm13Vf5wnA%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr class="alt">
+            <td>12:54</td>
+            <td class="destination">
+
+                London Waterloo
+
+            </td>
+            <td class="status">On time</td>
+            <td>1</td>
+            <td>
+                <a href="/service/ldbdetails/4JxcbmAD%23Pb3tu6Ja2zyJQ%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr>
+            <td>13:08</td>
+            <td class="destination">
+
+                London Waterloo via Hounslow &amp; Richmond
+
+            </td>
+            <td class="status">On time</td>
+            <td>2</td>
+            <td>
+                <a href="/service/ldbdetails/AQeq%2B9EGmRzgOfPTNP9SHA%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr class="alt">
+            <td>13:09</td>
+            <td class="destination">
+
+                London Waterloo
+
+            </td>
+            <td class="status">On time</td>
+            <td>1</td>
+            <td>
+                <a href="/service/ldbdetails/WAZlOUHGilC2PWTjzS9hVA%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr>
+            <td>13:23</td>
+            <td class="destination">
+
+                Weybridge
+
+            </td>
+            <td class="status">On time</td>
+            <td>2</td>
+            <td>
+                <a href="/service/ldbdetails/z1GqmUk6kpQRP2gjsWzTwQ%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr class="alt">
+            <td>13:24</td>
+            <td class="destination">
+
+                London Waterloo
+
+            </td>
+            <td class="status">On time</td>
+            <td>1</td>
+            <td>
+                <a href="/service/ldbdetails/SMNEqx5h4U8GS0VmM9Sgdw%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr>
+            <td>13:38</td>
+            <td class="destination">
+
+                London Waterloo via Hounslow &amp; Richmond
+
+            </td>
+            <td class="status">On time</td>
+            <td>2</td>
+            <td>
+                <a href="/service/ldbdetails/sB%2Bpfin%23ArA0XDnhJp1Mtg%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr class="alt">
+            <td>13:39</td>
+            <td class="destination">
+
+                London Waterloo
+
+            </td>
+            <td class="status">On time</td>
+            <td>1</td>
+            <td>
+                <a href="/service/ldbdetails/elDyebaXrw07Qx%23raFelgA%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr>
+            <td>13:53</td>
+            <td class="destination">
+
+                Weybridge
+
+            </td>
+            <td class="status">On time</td>
+            <td/>
+            <td>
+                <a href="/service/ldbdetails/GIJC62reFpMl%2347T9q7Dsw%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr class="alt">
+            <td>13:54</td>
+            <td class="destination">
+
+                London Waterloo
+
+            </td>
+            <td class="status">On time</td>
+            <td/>
+            <td>
+                <a href="/service/ldbdetails/2Xthn18fWxPUcNKt9lcCPQ%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr>
+            <td>14:08</td>
+            <td class="destination">
+
+                London Waterloo via Hounslow &amp; Richmond
+
+            </td>
+            <td class="status">On time</td>
+            <td/>
+            <td>
+                <a href="/service/ldbdetails/0SFqPOSIHWFssczIS98NXQ%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr class="alt">
+            <td>14:09</td>
+            <td class="destination">
+
+                London Waterloo
+
+            </td>
+            <td class="status">On time</td>
+            <td/>
+            <td>
+                <a href="/service/ldbdetails/kmDw9pmAGMgUqs6HyqXjrg%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr>
+            <td>14:23</td>
+            <td class="destination">
+
+                Weybridge
+
+            </td>
+            <td class="status">On time</td>
+            <td/>
+            <td>
+                <a href="/service/ldbdetails/INgErKVo9Jz9oloEHrTolQ%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr class="alt">
+            <td>14:24</td>
+            <td class="destination">
+
+                London Waterloo
+
+            </td>
+            <td class="status">On time</td>
+            <td/>
+            <td>
+                <a href="/service/ldbdetails/T%2B8fdJ50aIKnu5qELySCEA%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr>
+            <td>14:38</td>
+            <td class="destination">
+
+                London Waterloo via Hounslow &amp; Richmond
+
+            </td>
+            <td class="status">On time</td>
+            <td/>
+            <td>
+                <a href="/service/ldbdetails/sdzcy2bcFTkNqNoIQVCeaQ%3D%3D">Details</a>
+            </td>
+        </tr>
+        <tr class="alt">
+            <td>14:39</td>
+            <td class="destination">
+
+                London Waterloo
+
+            </td>
+            <td class="status">On time</td>
+            <td/>
+            <td>
+                <a href="/service/ldbdetails/XPpdx0Jwakj1Dp10uqigbw%3D%3D">Details</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
