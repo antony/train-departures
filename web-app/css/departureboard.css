@@ -9,7 +9,6 @@ body {
     color: #ffcc00;
     font-family: 'advent', sans-serif;
 }
-
 div.displayelement {
     padding: 0.1em;
 }
@@ -23,21 +22,24 @@ div.displayelement {
 }
 .destination {
     float: left;
-    max-width: 51%;
+    max-width: 62%;
     white-space: nowrap;
+}
+div.secondary {
+    overflow: hidden;
 }
 .expected {
     float: right;
     text-align: right;
-    width: 30%;
+    width: 20%;
 }
 div.scrollWrapper, div.scrollableArea {
     overflow: hidden;
 }
 div.destination {
-    width: 51%;
+    width: 62%;
     position: relative;
-    height: 1em;
+    height: 1.1em;
 }
 div#next-destination div.scrollableArea p {
     position: relative;

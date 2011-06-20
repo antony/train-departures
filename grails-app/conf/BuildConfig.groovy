@@ -16,11 +16,11 @@ grails.project.dependency.resolution = {
         grailsRepo('http://plugins.id.bskyb.com/svn', 'sky')
 
         mavenLocal()
-        mavenRepo("http://nexus.id.bskyb.com/nexus/content/groups/public/")
+        mavenCentral()
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
-        runtime 'htmlcleaner:htmlcleaner:2.2'
+        runtime 'net.sourceforge.htmlcleaner:htmlcleaner:2.2'
     }
 }
