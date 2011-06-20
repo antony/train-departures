@@ -15,6 +15,7 @@ div.displayelement {
 }
 .line {
     overflow: hidden;
+    display: block;
 }
 .scheduled {
     float: left;
@@ -23,11 +24,23 @@ div.displayelement {
 .destination {
     float: left;
     max-width: 51%;
-    overflow: hidden;
     white-space: nowrap;
 }
 .expected {
     float: right;
     text-align: right;
     width: 30%;
+}
+div#next-destination {
+    width: 51%;
+    position: relative;
+    height: 1em;
+}
+div#next-destination div.scrollableArea p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    white-space: nowrap;
+    float: left;
 }
