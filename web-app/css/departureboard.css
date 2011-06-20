@@ -34,7 +34,7 @@ div.displayelement {
 div.scrollWrapper, div.scrollableArea {
     overflow: hidden;
 }
-div#next-destination {
+div.destination {
     width: 51%;
     position: relative;
     height: 1em;

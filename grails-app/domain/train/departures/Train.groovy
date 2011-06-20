@@ -22,7 +22,7 @@ class Train {
         train.with {
             scheduled = info.td[0].text()
             destination = info.td[1].text()
-            expected = info.td[2].text().split(' ')[0]
+            expected = info.td[2].text()=="On time" ? 'On time' : info.td[2].text().split(' ')[0]
             platform = info.td[3].text()
         }
         return train
