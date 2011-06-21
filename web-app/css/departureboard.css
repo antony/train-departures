@@ -2,7 +2,6 @@
   font-family: 'Advent';
   src: url('/train-departures/fonts/advent.ttf');
 }
-
 body {
     font-size: 4em;
     background-color: #000;
@@ -22,7 +21,6 @@ div.displayelement {
 }
 .destination {
     float: left;
-    max-width: 62%;
     white-space: nowrap;
 }
 div.secondary {
@@ -31,13 +29,13 @@ div.secondary {
 .expected {
     float: right;
     text-align: right;
-    width: 20%;
+    width: 24%;
 }
 div.scrollWrapper, div.scrollableArea {
     overflow: hidden;
 }
 div.destination {
-    width: 62%;
+    width: 56%;
     position: relative;
     height: 1.1em;
 }

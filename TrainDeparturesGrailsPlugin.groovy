@@ -11,12 +11,10 @@ class TrainDeparturesGrailsPlugin {
     ]
 
     // TODO Fill in these fields
-    def author = "Your name"
-    def authorEmail = ""
-    def title = "Plugin summary/headline"
-    def description = '''\\
-Brief description of the plugin.
-'''
+    def author = "Antony Jones"
+    def authorEmail = "aj@desirableobjects.co.uk"
+    def title = "Train Departures Plugin"
+    def description = '''Shows live train departure information for any station in the UK, including delayed trains and cancellations'''
 
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/train-departures"
