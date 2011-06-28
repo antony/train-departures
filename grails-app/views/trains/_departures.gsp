@@ -24,12 +24,6 @@
     <g:javascript>
           var $j = jQuery.noConflict();
           $j(window).load(function() {
-              $j("div#next-destination").smoothDivScroll({autoScroll: "always", autoScrollStep: 1, autoScrollDirection:"right"}, {autoScrollRightLimitReached: function() {
-                 setTimeout(function() {
-                    $("div#next-destination").smoothDivScroll("restoreOriginalElements");
-                 }, 2500);
-              }
-            });
             $j.PeriodicalUpdater({
                url : '${resource(dir:'trains/departures', file:'BFD.json')}',
                minTimeout: 60000,
@@ -46,6 +40,13 @@
              $j('#third-destination').text(data.third.destination);
              $j('#third-scheduled').text(data.third.scheduled);
              $j('#third-expected').text(data.third.expected);
-            });
+             $j("div#next-destination").smoothDivScroll({autoScroll: "always", autoScrollStep: 1, autoScrollDirection:"right"}, {
+                autoScrollRightLimitReached: function() {
+                  setTimeout(function() {
+                    $j("div#next-destination").smoothDivScroll("restoreOriginalElements");
+                  }, 2500);
+                }
+              });
+             });
           });
     </g:javascript>
