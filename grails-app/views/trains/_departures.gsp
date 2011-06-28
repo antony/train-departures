@@ -22,15 +22,20 @@
       <div class="scheduled displayelement">${departures.third.scheduled}</div> <div class="destination secondary displayelement">${departures.third.destination}</div><div class="expected displayelement">${departures.third.expected}</div>
     </div>
     <g:javascript>
-          $(window).load(function() {
+          var $j = jQuery.noConflict();
+          $j(window).load(function() {
               $("div#next-destination").smoothDivScroll({autoScroll: "always", autoScrollStep: 1, autoScrollDirection:"right"}, {autoScrollRightLimitReached: function() {
                  setTimeout(function() {
                     $("div#next-destination").smoothDivScroll("restoreOriginalElements");
                  }, 2500);
               }
             });
+             $.PeriodicalUpdater({
+                url : '${resource(plugin:'train-departures', dir:'trains/departures', file:'BFD.json')}'
+             },
+             function(data){
+                var myHtml = 'The data returned from the server was: ' + data + '';
+                $('#results').append(myHtml);
+             });
           });
-          setTimeout( function() {
-            window.location.reload();
-          }, 60000);
     </g:javascript>

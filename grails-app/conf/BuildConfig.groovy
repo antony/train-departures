@@ -23,4 +23,7 @@ grails.project.dependency.resolution = {
 
         runtime 'net.sourceforge.htmlcleaner:htmlcleaner:2.2'
     }
+    plugins {
+        runtime ':jquery:1.6.1.1', ':jquery-ui:1.8.11'
+    }
 }

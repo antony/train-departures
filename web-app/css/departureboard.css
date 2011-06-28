@@ -1,7 +1,3 @@
-@font-face {
-  font-family: 'Advent';
-  src: url('/train-departures/fonts/advent.ttf');
-}
 body {
     font-size: 4em;
     background-color: #000;

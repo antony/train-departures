@@ -13,7 +13,7 @@ import org.htmlcleaner.SimpleXmlSerializer
 
 class HtmlCleaningService {
 
-    static transactional = true
+    static transactional = false
 
     GPathResult clean(URL url) {
 
