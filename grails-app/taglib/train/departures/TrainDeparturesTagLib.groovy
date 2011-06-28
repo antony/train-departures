@@ -20,9 +20,10 @@ class TrainDeparturesTagLib {
 
     def board = { Map attrs ->
 
-        DepartureBoard departureBoard = departureBoardService.nextDepartures(attrs.station)
+        //DepartureBoard departureBoard = departureBoardService.nextDepartures(attrs.station)
 
-        out << g.render(template:'/trains/departures', plugin:'train-departures', model: [departures:departureBoard])
+        //out << g.render(template:'/trains/departures', plugin:'train-departures', model: [departures:departureBoard])
+        out << g.render(template:'/trains/departures', plugin:'train-departures')
     }
 
 }
