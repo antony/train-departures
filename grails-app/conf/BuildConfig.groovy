@@ -1,6 +1,9 @@
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
+grails.plugin.repos.discovery.sky= 'http://plugins.id.bskyb.com/svn'
+grails.plugin.repos.distribution.sky = 'http://plugins.id.bskyb.com/svn'
+
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -25,5 +28,6 @@ grails.project.dependency.resolution = {
     }
     plugins {
         runtime ':jquery:1.6.1.1', ':jquery-ui:1.8.11'
+        runtime ':maven-publisher:latest.integration'
     }
 }

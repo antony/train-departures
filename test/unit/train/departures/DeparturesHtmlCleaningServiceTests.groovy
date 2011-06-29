@@ -2,7 +2,7 @@ package train.departures
 
 import grails.test.*
 
-class HtmlCleaningServiceTests extends GrailsUnitTestCase {
+class DeparturesHtmlCleaningServiceTests extends GrailsUnitTestCase {
     protected void setUp() {
         super.setUp()
     }

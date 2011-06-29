@@ -11,7 +11,7 @@ import org.htmlcleaner.XmlSerializer
 import org.htmlcleaner.SimpleXmlSerializer
 import train.departures.exception.DepartureInformationAvailabilityException
 
-class HtmlCleaningService {
+class DeparturesHtmlCleaningService {
 
     static transactional = false
 
