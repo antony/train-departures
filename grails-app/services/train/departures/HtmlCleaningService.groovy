@@ -2,14 +2,14 @@ package train.departures
 
 import org.htmlcleaner.HtmlCleaner
 import org.htmlcleaner.TagNode
-import org.w3c.dom.xpath.XPathResult
+
 import groovy.util.slurpersupport.GPathResult
 import org.htmlcleaner.CleanerProperties
-import org.htmlcleaner.HtmlSerializer
-import org.htmlcleaner.SimpleHtmlSerializer
+
 import org.htmlcleaner.XPather
 import org.htmlcleaner.XmlSerializer
 import org.htmlcleaner.SimpleXmlSerializer
+import train.departures.exception.DepartureInformationAvailabilityException
 
 class HtmlCleaningService {
 
@@ -30,6 +30,10 @@ class HtmlCleaningService {
         Object[] table = xpather.evaluateAgainstNode(node)
 
         XmlSerializer serializer = new SimpleXmlSerializer(props)
+
+        if (table.length != 1) {
+            throw new DepartureInformationAvailabilityException()
+        }
 
         serializer.write((TagNode)table[0], captured, 'utf-8')
 

@@ -2,7 +2,7 @@ package train.departures
 
 import groovy.util.slurpersupport.GPathResult
 
-class DepartureBoard {
+class DepartureBoard extends EmptyDepartureBoard {
 
     static constraints = {
     }
