@@ -32,21 +32,21 @@
                $j('#first-destination').text(data.next.destination);
                $j('#first-scheduled').text(data.next.scheduled);
                $j('#first-expected').text(data.next.expected);
-               $j('#next').fadeIn();
-             });
-
-             $j('#second').fadeOut(function() {
-               $j('#second-destination').text(data.second.destination);
-               $j('#second-scheduled').text(data.second.scheduled);
-               $j('#second-expected').text(data.second.expected);
-               $j('#second').fadeIn();
-             });
-
-             $j('#third').fadeOut(function() {
-               $j('#third-destination').text(data.third.destination);
-               $j('#third-scheduled').text(data.third.scheduled);
-               $j('#third-expected').text(data.third.expected);
-               $j('#third').fadeIn();
+               $j('#next').fadeIn(function() {
+                 $j('#second').fadeOut(function() {
+                   $j('#second-destination').text(data.second.destination);
+                   $j('#second-scheduled').text(data.second.scheduled);
+                   $j('#second-expected').text(data.second.expected);
+                   $j('#second').fadeIn(function() {
+                     $j('#third').fadeOut(function() {
+                       $j('#third-destination').text(data.third.destination);
+                       $j('#third-scheduled').text(data.third.scheduled);
+                       $j('#third-expected').text(data.third.expected);
+                       $j('#third').fadeIn();
+                     });
+                   });
+                 });
+               });
              });
 
              $j("div#next-destination").smoothDivScroll({autoScroll: "always", autoScrollStep: 1, autoScrollDirection:"right"}, {
