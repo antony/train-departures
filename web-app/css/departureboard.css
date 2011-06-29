@@ -1,8 +1,9 @@
-body {
+div#departure-board {
     font-size: 3.6em;
     background-color: #000;
     color: #ffcc00;
     font-family: 'advent', sans-serif;
+    width: 100%;
 }
 div.displayelement {
     padding: 0.1em;

@@ -1,4 +1,5 @@
-<div id="next" class="line">
+<div id="departure-board">
+  <div id="next" class="line">
       <div class="scheduled displayelement time" id="first-scheduled">xxx</div>
       <div id="next-destination" class="destination displayelement">
         <div class="scrollingHotSpotLeft"></div>
@@ -82,3 +83,4 @@
             });
           });
     </g:javascript>
+</div>
