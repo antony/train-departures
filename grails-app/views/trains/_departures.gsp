@@ -1,26 +1,30 @@
 <div id="departure-board">
   <div id="next" class="line">
-      <div class="scheduled displayelement time" id="first-scheduled">xxx</div>
+      <div class="scheduled displayelement time" id="first-scheduled">&nbsp;</div>
       <div id="next-destination" class="destination displayelement">
         <div class="scrollingHotSpotLeft"></div>
         <div class="scrollingHotSpotRight"></div>
         <div class="scrollWrapper">
           <div class="scrollableArea">
-            <p id="first-destination">Please see posters</p>
+            <p id="first-destination">Live travel information</p>
           </div>
         </div>
       </div>
-      <div class="expected displayelement time" id="first-expected">xxx</div>
+      <div class="expected displayelement time" id="first-expected">&nbsp;</div>
     </div>
     <div id="second" class="line">
-      <div class="scheduled displayelement time" id="second-scheduled">xxx</div>
+      <div class="scheduled displayelement time" id="second-scheduled">&nbsp;</div>
       <div class="destination secondary displayelement" id="second-destination">
-        xxx
+        is currently unavailable
       </div>
-      <div class="expected displayelement time" id="second-expected">xxx</div>
+      <div class="expected displayelement time" id="second-expected">&nbsp;</div>
     </div>
     <div id="third" class="line">
-      <div class="scheduled displayelement time" id="third-scheduled">xxx</div> <div class="destination secondary displayelement" id="third-destination">xxx</div><div class="expected displayelement time" id="third-expected">xxx</div>
+      <div class="scheduled displayelement time" id="third-scheduled">&nbsp;</div>
+      <div class="destination secondary displayelement" id="third-destination">
+        please see posters
+      </div>
+      <div class="expected displayelement time" id="third-expected">&nbsp;</div>
     </div>
     <g:javascript>
           var $j = jQuery.noConflict();
@@ -63,24 +67,27 @@
               $j("div#next-destination").text('Live travel information');
               $j("div#second-destination").text('is currently unavailable');
               $j("div#third-destination").text('please see posters');
+            },
+            requestTravelInformation: function() {
+              $j.PeriodicalUpdater({
+                 url : '${params.ep ?: resource(dir:'trains/departures', file:'BFD.json')}',
+                 minTimeout: 60000,
+                 maxTimeout: 60000,
+                 multiplier: 1,
+                 type: 'json'
+              },
+              function(data) {
+                if (data['empty'] == 'true') {
+                  $j.displayCustomerApology();
+                } else {
+                  $j.updateDepartureBoard(data);
+                }
+              });
             }
           });
 
           $j(window).load(function() {
-            $j.PeriodicalUpdater({
-               url : '${resource(dir:'trains/departures', file:'BFD.json')}',
-               minTimeout: 60000,
-               maxTimeout: 60000,
-               multiplier: 1,
-               type: 'json'
-            },
-            function(data) {
-              if (data['class'] == 'train.departures.EmptyDepartureBoard') {
-                $j.displayCustomerApology();
-              } else {
-                $j.updateDepartureBoard(data);
-              }
-            });
+            $j.requestTravelInformation();
           });
     </g:javascript>
 </div>

@@ -12,4 +12,10 @@ class TrainsController {
 
     }
 
+    def fiveohtwo = {
+
+        return render(status:502)
+        
+    }
+
 }

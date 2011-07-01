@@ -16,7 +16,7 @@ class DepartureBoardService {
         try {
             departures = departuresHtmlCleaningService.clean(url)
         } catch (DepartureInformationAvailabilityException diae) {
-            return new EmptyDepartureBoard()
+            return DepartureBoard.configure()
         }
 
         return DepartureBoard.configure(departures)

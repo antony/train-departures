@@ -2,14 +2,19 @@ package train.departures
 
 import groovy.util.slurpersupport.GPathResult
 
-class DepartureBoard extends EmptyDepartureBoard {
+class DepartureBoard {
+
+    boolean empty = false
+    Train next
+    Train second
+    Train third
 
     static constraints = {
     }
 
-    Train next
-    Train second
-    Train third
+    private DepartureBoard() {
+        this.empty = true
+    }
 
     private DepartureBoard(GPathResult departures) {
 
@@ -23,6 +28,10 @@ class DepartureBoard extends EmptyDepartureBoard {
 
         return new DepartureBoard(info)
 
+    }
+
+    public static configure() {
+        return new DepartureBoard()
     }
 
 }
