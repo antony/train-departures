@@ -33,7 +33,6 @@ div.scrollWrapper, div.scrollableArea {
 }
 div.destination {
     width: 56%;
-    min-width: 56%;
     position: relative;
     height: 1.1em;
 }

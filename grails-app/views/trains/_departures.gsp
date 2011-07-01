@@ -71,7 +71,7 @@
             requestTravelInformation: function() {
               $j.PeriodicalUpdater({
                  url : '${params.ep ?: resource(dir:'trains/departures', file:'BFD.json')}',
-                 minTimeout: 60000,
+                 minTimeout: ${params.ep ? 5000 : 60000},
                  maxTimeout: 60000,
                  multiplier: 1,
                  type: 'json'
