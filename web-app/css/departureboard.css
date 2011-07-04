@@ -36,7 +36,7 @@ div.destination {
     position: relative;
     height: 1.1em;
 }
-div#next-destination div.scrollableArea p {
+div#next-destination div.scrollableArea span {
     position: relative;
     margin: 0;
     padding: 0;

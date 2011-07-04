@@ -24,7 +24,7 @@ class TrainsController {
         List<Train> trains = [
             new Train(destination: 'Weybridge', scheduled: '09:00', expected:'10:00'),
             new Train(destination: 'London Waterloo', scheduled: '08:30', expected:'09:21'),
-            new Train(destination: 'London Waterloo via Hounslow and Weybridge', scheduled: '08:30', expected:'09:21')
+            new Train(destination: 'London Waterloo via Hounslow and Weybridge', scheduled: '08:20', expected:'8:45')
         ]
 
         Random r = new Random()

@@ -6,7 +6,7 @@
         <div class="scrollingHotSpotRight"></div>
         <div class="scrollWrapper">
           <div class="scrollableArea">
-            <p id="first-destination">Live travel information</p>
+            <span id="first-destination">Live travel information</span>
           </div>
         </div>
       </div>
@@ -36,6 +36,7 @@
                $j('#first-destination').text(data.next.destination);
                $j('#first-scheduled').text(data.next.scheduled);
                $j('#first-expected').text(data.next.expected);
+               $j(".scrollableArea span").css("width", "200%");
                $j('#next').fadeIn(function() {
                  $j('#second').fadeOut(function() {
                    $j('#second-destination').text(data.second.destination);
@@ -57,7 +58,7 @@
                 autoScrollRightLimitReached: function() {
                   setTimeout(function() {
                     $j("div#next-destination").smoothDivScroll("restoreOriginalElements");
-                  }, 2500);
+                  }, ${params.ep ? 0 : 2500});
                 }
               });
             },
