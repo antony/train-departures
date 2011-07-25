@@ -26,8 +26,11 @@ class DepartureBoard {
 
     public static configure(GPathResult info) {
 
+        if (info.tbody.tr[0].td[1].text()=="") {
+            this.empty = true
+        }
+        
         return new DepartureBoard(info)
-
     }
 
     public static configure() {
