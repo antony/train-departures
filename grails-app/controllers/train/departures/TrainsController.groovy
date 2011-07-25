@@ -36,4 +36,9 @@ class TrainsController {
 
     }
 
+    def empty = {
+        DepartureBoard departureBoard = DepartureBoard.configure(new XmlSlurper().parseText("<tbody><tr><td>x</td><td></td></tr></tbody>"))
+        return render(departureBoard as JSON)
+    }
+
 }

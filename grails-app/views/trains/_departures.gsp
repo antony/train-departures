@@ -78,7 +78,7 @@
                  type: 'json'
               },
               function(data) {
-                if (data['empty'] == 'true') {
+                if (data['empty'] == true) {
                   $j.displayCustomerApology();
                 } else {
                   $j.updateDepartureBoard(data);
