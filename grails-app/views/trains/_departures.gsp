@@ -65,7 +65,7 @@
             displayCustomerApology: function(data) {
               $j("div.destination").css('text-align', 'center');
               $j("div.time").text('');
-              $j("div#next-destination").text('Live travel information');
+              $j("span#first-destination").text('Live travel information');
               $j("div#second-destination").text('is currently unavailable');
               $j("div#third-destination").text('please see posters');
             },
