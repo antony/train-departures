@@ -8,7 +8,7 @@ class TrainsController {
 
     def departures = {
 
-        return render(departureBoardService.nextDepartures('BFD') as JSON)
+        return render(departureBoardService.nextDepartures(params.from) as JSON)
 
     }
 

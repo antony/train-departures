@@ -10,7 +10,7 @@ class DepartureBoardService {
 
     DepartureBoard nextDepartures(String stationCode) {
 
-        URL url = new URL("http://ojp.nationalrail.co.uk/service/ldbboard/dep/${stationCode ?: 'WAT'}")
+        URL url = new URL("http://ojp.nationalrail.co.uk/service/ldbboard/dep/${stationCode ?: 'BFD'}")
 
         GPathResult departures
         try {

@@ -20,7 +20,7 @@ class TrainDeparturesTagLib {
 
     def board = { Map attrs ->
 
-        out << g.render(template:'/trains/departures', plugin:'train-departures')
+        out << g.render(template:'/trains/departures', plugin:'train-departures', model: [from:attrs.from ?: 'BFD'])
     }
 
 }
